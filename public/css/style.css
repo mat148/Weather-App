@@ -1,17 +1,35 @@
-/*
-  Styles from this codepen:
-  https://codepen.io/official_naveen/pen/rgknI
-*/
-
+html {
+    height: 100%;
+    width: 100%;
+}
 body {
-    width: 800px;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    height: 100%;
+    width: 100%;
 }
-.container {
-    width: 600px;
+.parent-container {
+    padding: 0 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
+
+.search-container {
+    max-width: 480px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.results-container {
+    max-width: 480px;
+    width: 100%;
+}
+
 fieldset {
     display: block;
     -webkit-margin-start: 0px;
@@ -26,8 +44,6 @@ fieldset {
     border-image-width: initial;
     border-image-outset: initial;
     border-image-repeat: initial;
-    min-width: -webkit-min-content;
-    padding: 30px;
 }
 .ghost-input, p {
     display: block;
@@ -43,13 +59,8 @@ fieldset {
     color: #4b545f;
     background: #fff;
     font-family: Open Sans,Verdana;
-    padding: 10px 15px;
-    margin: 30px 0px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+    padding: 12px 24px;
+    transition: all 0.2s ease-out;
 }
 .ghost-input:focus {
     border-bottom:1px solid #ddd;
@@ -60,11 +71,7 @@ fieldset {
     padding:10px 30px;
     width: 100%;
     min-width: 350px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-out;
 }
 .ghost-button:hover {
     border:2px solid #515151;
